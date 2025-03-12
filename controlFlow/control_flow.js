@@ -43,6 +43,11 @@ switch (userType) {
     default:
         userCategory = "Unknown";
 }
+
+isAuthenticated = true;
+
+let authenticationStatus= isAuthenticated? "Authenticates": "Not authenticated";
 console.log("AccessLevel:",accessLevel);
 console.log("User Message:",userMessage);
 console.log("User Category:",userCategory);
+console.log("Authentication Status :",authenticationStatus);
